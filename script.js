@@ -10,11 +10,11 @@ function add() {
   const dayExists = nlwSetup.dayExists(today);
 
   if (dayExists) {
-    alert("Dia já registrado!");
+    alert("💢Dia já registrado!💢");
     return;
   }
 
-  alert("Dia registrado com sucesso🎇");
+  alert("🌟Dia registrado com sucesso!🌟");
   nlwSetup.addDay(today);
 }
 
