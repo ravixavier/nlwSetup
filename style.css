@@ -31,6 +31,7 @@ body {
   position: fixed;
   width: 100%;
   background: #09090a;
+  z-index: 1;
 }
 
 form,
@@ -46,10 +47,12 @@ form {
 }
 
 .habits {
-  margin-top: 64px;
+  padding-top: 62px;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  background-color: #09090a;
+  position: absolute;
 }
 
 .habit {
@@ -64,7 +67,7 @@ form {
 
 .days {
   gap: 48px;
-  margin-left: 32px;
+  margin-left: 96px;
 }
 
 .day {
@@ -86,13 +89,44 @@ button {
   gap: 12px;
   background-color: transparent;
   color: #fff;
-  border: 2px solid #8b5cf6;
+  border: 2px solid #14b8a6;
   border-radius: 10px;
   align-items: center;
   cursor: pointer;
 }
 
 input {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 64px;
+  width: 64px;
+  border-radius: 100px;
+  background: linear-gradient(225deg, #0a0a0b, #080809);
+  box-shadow: -3px 3px 5px #040404, 3px -3px 5px #0e0e10;
+
+  transition: 0.75s;
+}
+
+input:checked {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 64px;
+  width: 64px;
+border-radius: 100px;
+background: #115E59;
+box-shadow: inset -5px 5px 7px #072624,
+            inset 5px -5px 7px #1b968e;
+            transition: 0.75s;
+}
+
+@media (max-width: 550px) {
+  button span {
+    display: none;
+  }
+}
+
+/* older input button */
+/* input {
   appearance: none;
   -webkit-appearance: none;
   height: 64px;
@@ -110,10 +144,4 @@ input:checked {
   background: #8b5cf6;
   border: 2px solid #a78bfa;
   border-radius: 8px;
-}
-
-@media (max-width: 550px) {
-  button span {
-    display: none;
-  }
-}
+} */
