@@ -48,11 +48,13 @@ form {
 
 .habits {
   padding-top: 62px;
+  padding-left: 40px;
   display: flex;
   flex-direction: column;
   gap: 24px;
   background-color: #09090a;
   position: absolute;
+  left: 0;
 }
 
 .habit {
