@@ -44,6 +44,7 @@ form {
   padding: 20px 40px;
   padding-top: 200px;
   overflow-x: auto;
+  position: relative;
 }
 
 .habits {
@@ -53,6 +54,7 @@ form {
   gap: 24px;
   background-color: #09090a;
   position: absolute;
+  left: 0px;
 }
 
 .habit {
@@ -67,7 +69,7 @@ form {
 
 .days {
   gap: 48px;
-  margin-left: 96px;
+  margin-left: 32px;
 }
 
 .day {
@@ -112,11 +114,10 @@ input:checked {
   -webkit-appearance: none;
   height: 64px;
   width: 64px;
-border-radius: 100px;
-background: #115E59;
-box-shadow: inset -5px 5px 7px #072624,
-            inset 5px -5px 7px #1b968e;
-            transition: 0.75s;
+  border-radius: 100px;
+  background: #115e59;
+  box-shadow: inset -5px 5px 7px #072624, inset 5px -5px 7px #1b968e;
+  transition: 0.75s;
 }
 
 @media (max-width: 550px) {
